@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="500" height="500" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Draw face
+ctx.beginPath();
+ctx.arc(250, 250, 100, 0, 2 * Math.PI);
+ctx.stroke();
+
+// Draw left eye
+ctx.beginPath();
+ctx.arc(210, 220, 20, 0, 2 * Math.PI);
+ctx.stroke();
+
+// Draw right eye
+ctx.beginPath();
+ctx.arc(290, 220, 20, 0, 2 * Math.PI);
+ctx.stroke();
+
+// Draw mouth
+ctx.beginPath();
+ctx.arc(250, 280, 50, 0, Math.PI);
+ctx.stroke();
+</script>
+
+</body>
+</html>
